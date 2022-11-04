@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Application</title>
+    <link rel="stylesheet" href="emp.css"/>
+</head>
+<body>
+    
+    <h1> EMPLOYEE APPLICATION</h1>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();"autocomplete="off">
+                    <div>
+                        <label >Employee Name</label>
+                        <input type="text"name="employee name" id="employee name">
+
+                    </div><br>
+                    <div>
+                        <label >Employee Id</label>
+                        <input type="number"name="employee id" id="employee id">
+                        
+                    </div><br>
+                    <div>
+                        <label >Employee Salary</label>
+                        <input type="number"name="employee salary" id="employee salary">
+                    
+                        
+                    </div><br>
+                    <div>
+                        <label >Employee Address</label>
+                        <input type="text"name="employee address" id="employee address">
+                        
+                    </div><br>
+                    <div>
+                        <label >Employee Phone no</label>
+                        <input type="number"name="employee phone no" id="phone no">
+                        
+                    </div><br>
+                    <div>
+                        <label >Employee Email</label>
+                        <input type="text"name="employee email" id="employee email">
+                        
+                    </div><br>
+                    <div><class="form-action-buttons">
+                        <input type="Submit" value="Submit">
+                    </div><br>
+                    
+                </form>
+            </td>
+        </tr>
+        <table class="list" id="employeelist">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Employee Id</th>
+                    <th>Employee Salary</th>
+                    <th>Employee Address</th>
+                    <th>Employee Phone no</th>
+                    <th>Employee Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+
+        
+    </table>
+    <script  src="empscript.js"></script>
+</body>
+</html>
+
+
+
+
+
+function onFormSubmit(){
+    var formDate=readFormData();
+
+}
+function readFormData(){
+    var formData={};
+    formDate["Employee Name"]=document.getElementById("EmployeeName").value;
+    formDate["Employee Id"]=document.getElementById("Employeeid").value;
+    formDate["Employee Salary"]=document.getElementById("Employeesalay").value;
+    formDate["Employee Address"]=document.getElementById("Employeeaddress").value;
+    formDate["Employee Phone no"]=document.getElementById("Employeephoneno").value;
+    formDate["Employee Email"]=document.getElementById("Employeeemail").value;
+return FormData;
+}
+function{
+    var tabel=document.getElementById("employeelist").getElementsByTagName('tbody')[0];
+    var newRow=tabel.insertRow(tabel.length);
+    cell1=newRow.insertCell(0);
+    cell1.innerHTML=data.employeename;
+    cell2=newRow.insertCell(1);
+    cell2.innerHTML=data.employeeid;
+    cell3=newRow.insertCell(2);
+    cell3.innerHTML=data.employeesalary;
+    cell4=newRow.insertCell(3);
+    cell4.innerHTML=data.employeeaddress;
+    cell5=newRow.insertCell(4);
+    cell5.innerHTML=data.employeephoneno;
+    cell6=newRow.insertCell(5);
+    cell6.innerHTML=data.employeeemail;
+    cell7=newRow.insertCell(6);
+    cell7.innerHTML='<a>Edit</a>;
+                     <a>Delete</a>';//
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        '
+    )
+
+
+
+
+
+
+
+
+}
